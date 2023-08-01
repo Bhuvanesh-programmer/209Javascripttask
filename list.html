@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <div class="contain">
+        <a href="index.html"><button class="a" onclick="x()">Page1</button></a>
+        <a href="calculator.html"><button class="a" onclick="x()">Page2</button></a>
+        <a href="list.html"><button class="a" onclick="x()">Page3</button></a>
+        <link rel="stylesheet" href="style.css">
+      </div><style>
+        body{
+            background: url("image/todoimage.jpg");
+        }
+
+        .container{
+            text-align: center;
+        }
+        
+      </style>
+</head>
+<body>
+    <div class="container">
+            <h3 style="text-align: center;"><strong>To-Do List</strong></h3>
+                <input type="text" id="ip" placeholder="Add your content to your list...!! ">
+                <button id="Add-to-do" onclick="add()" style="padding: 3px 2px 2px 3px; background-color: rgb(100, 19, 19); color: azure; border-radius: 10%; width: 50px; height: 30px;">Add</button>
+            <div class="mr" id="todo">
+            </div>
+            
+    </div>
+  <div class="ins">
+    <h3><strong>INSTRUCTION:-</strong></h3>
+    <i>
+       <strong><ul>
+            <li>
+                click on the add button to
+                add the content to your <br>
+                To-do list 
+            </li>
+            <li>
+                single click to mark as done
+            </li>
+            <li>
+                double clickto delete
+            </li>
+        </strong> </ul>
+    </i>
+  </div>
+</body>
+</html>
+<script>
+  let a = document.getElementById('Add-to-do');
+  let b = document.getElementById('todo')
+  let ip = document.getElementById('ip')
+
+  a.addEventListener('click',function(){
+    var val = document.createElement('p');
+    val.classList.add('sty');
+    val.innerText=ip.value;
+    b.appendChild(val);
+    ip.value="";
+    val.className="sty"
+    val.addEventListener('click',function(){
+        val.classList.toggle("sty1")
+    })
+    val.addEventListener('dblclick',function(){
+        b.removeChild(val);
+    })
+  })
+</script>

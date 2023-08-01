@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Interactive Page</title>
+        <div class="contain" >
+            <a href="index.html"><button class="a" onclick="x()">Page1</button></a>
+            <a href="calculator.html"><button class="a" onclick="x()">Page2</button></a>
+            <a href="list.html"><button class="a" onclick="x()">Page3</button></a>
+          </div>
+          <link rel="stylesheet" href="style.css">
+         
+    </head>
+    <body class="indexbody">
+        <header class="Header">
+            <h1><strong>Interactive Web Page</strong></h1>
+        </header>
+        <div class="video">
+        </div>
+        <div class="box">
+        <form class="inside">
+            <lable class="lable" for="username"><span style="color: antiquewhite;">#User Name:</span></lable>
+            <br><br>
+            <input class="input" type="text" placeholder="User_name.." name="M_r_K" required>
+            <br><br>
+            <label class="lable" for="password"><span style="color: antiquewhite;">#Password:</span></label>
+            <br><br>
+            <input class="input" type="password" name="77088" placeholder="Password..">
+            <br><br>
+            <input class="button" type="button" value="Enter !" onClick="login()">
+            <br>
+
+        </form>
+        </div>
+    </body>
+</html>
+<script>
+    function login(){
+        alert("Your user name and password is valid!");
+    }
+    function x(){
+        
+        let status = confirm("do you want to leave this site ?");
+        alert(status);
+    }
+</script>

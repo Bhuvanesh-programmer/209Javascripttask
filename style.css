@@ -1,0 +1,39 @@
+.indexbody{
+    background: url("image/robotics.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.Header{
+    text-align: center;
+    color: white;
+}
+
+.inside{
+
+    text-align: center;
+    margin: 20%;
+}
+
+.calcibody{
+    background: url("image/calcimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.calculator {
+    /* text-align: center; */
+    margin: 30%;
+}
+
+.a{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 2ms;
+}
+
+.a:hover{
+    background-color: white;
+    color: black;
+}
